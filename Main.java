@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args) {
 
@@ -16,5 +15,19 @@ public class Main {
                 + barang3.hitungTotal();
 
         System.out.println("Total Belanja : Rp" + totalBelanja);
+
+        System.out.println("\nNama barang1 : " + barang1.getNama());
+        System.out.println("Harga barang1 : Rp" + barang1.getHarga());
+        System.out.println("Jumlah barang1 : " + barang1.getJumlah());
+
+        barang1.setNama("Buku Tulis");
+        barang1.setHarga(20000);
+        barang1.setJumlah(3);
+
+        System.out.println("\nSetelah perubahan:");
+        barang1.tampilkanInfo();
+
+        barang1.setHarga(-5000);
+        barang1.setJumlah(-2);
     }
 }
