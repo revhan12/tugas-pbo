@@ -16,18 +16,18 @@ public class Main {
 
         System.out.println("Total Belanja : Rp" + totalBelanja);
 
-        System.out.println("\nNama barang1 : " + barang1.getNama());
-        System.out.println("Harga barang1 : Rp" + barang1.getHarga());
-        System.out.println("Jumlah barang1 : " + barang1.getJumlah());
+        System.out.println("\nData barang1:");
+        System.out.println("Nama : " + barang1.getNama());
+        System.out.println("Harga : Rp" + barang1.getHarga());
+        System.out.println("Jumlah : " + barang1.getJumlah());
 
         barang1.setNama("Buku Tulis");
         barang1.setHarga(20000);
         barang1.setJumlah(3);
 
-        System.out.println("\nSetelah perubahan:");
+        System.out.println("\nSetelah menggunakan setter:");
         barang1.tampilkanInfo();
 
         barang1.setHarga(-5000);
-        barang1.setJumlah(-2);
     }
 }
